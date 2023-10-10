@@ -72,7 +72,7 @@ function Card() {
           </div>
         </div>
         <div className="w-full overflow-auto">
-          <div style={{minWidth: 880}}>
+          <div style={{minWidth: 870}}>
             <div className="border border-gray-300 rounded-xl">
               <table className="w-full ">
                 <thead className="text-neutral-500 text-xs font-medium">
