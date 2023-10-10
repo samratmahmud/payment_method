@@ -76,7 +76,7 @@ function Card() {
             <div className="border border-gray-300 rounded-xl">
               <table className="w-full ">
                 <thead className="text-neutral-500 text-xs font-medium">
-                  <tr className="border-b border-neutral-500">
+                  <tr className="border-b border-gray-300">
                     <th className="pl-6 text-left py-3 w-14">
                       <input
                         role="button"
@@ -85,7 +85,7 @@ function Card() {
                       />
                     </th>
                     <th className="text-left">
-                      <div className="flex items-center gap-1">
+                      <div role="button" className="flex items-center gap-1">
                         <div className="text-xs text-neutral-500 font-medium">
                           Invoice
                         </div>
@@ -112,15 +112,24 @@ function Card() {
                           type="checkbox"
                         />
                       </td>
-                      <td className="text-sm font-medium text-gray-900">
+                      <td className="text-sm font-medium text-gray-900 lg:pr-12">
                         Users on plan
                       </td>
-                      <td className="text-sm text-neutral-500">USD $10.00</td>
-                      <td className="text-sm text-neutral-500">Dec 1, 2022</td>
-                      <td>
-                        <div aria-label="status" className="flex items-center">
+                      <td className="text-sm text-neutral-500 lg:pr-2">
+                        USD $10.00
+                      </td>
+                      <td className="text-sm text-neutral-500 lg:pr-2">
+                        Dec 1, 2022
+                      </td>
+                      <td className="inline-block">
+                        <div
+                          aria-label="status"
+                          className="flex items-center gap-1 py-0.5 px-2 bg-emerald-300 lg:pr-2"
+                        >
                           <img src="/picture/check.svg" alt="" />
-                          <span>Paid</span>
+                          <span className="text-xs font-medium text-emerald-700">
+                            Paid
+                          </span>
                         </div>
                       </td>
                       <td>
