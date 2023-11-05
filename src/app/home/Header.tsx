@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import ScrollContainer from "react-indiana-drag-scroll";
 
-const buttonAll = [
+const buttons = [
   {
     name: "My details",
     url: "/",
@@ -57,16 +57,13 @@ function Header() {
           className="scroll-container"
         >
           <div className="flex mb-8">
-            {buttonAll.map((item, index) => (
+            {buttons.map(({name, url}, index) => (
               <div
                 key={index}
                 className="first:rounded-s-lg last:rounded-e-lg border border-gray-500 py-2.5 px-4 flex-shrink-0"
               >
-                <Link
-                  href={item.url}
-                  className="text-sm font-medium text-gray-700"
-                >
-                  {item.name}
+                <Link href={url} className="text-sm font-medium text-gray-700">
+                  {name}
                 </Link>
               </div>
             ))}
@@ -78,7 +75,7 @@ function Header() {
         <div className="text-sm text-neutral-500 mb-5">
           Update your billing details and address.
         </div>
-        <hr className="h-[1px] bg-gray-300 mb-6" />
+        <hr className="h-[2px] bg-gray-300 mb-6" />
         <div className="flex lg:flex-row flex-col lg:gap-8 gap-5 mb-5">
           <div>
             <div className="text-sm font-medium text-gray-700">
@@ -134,7 +131,7 @@ function Header() {
             </div>
           </div>
         </div>
-        <hr className="h-[1px] bg-gray-300 mb-5" />
+        <hr className="h-[2px] bg-gray-300 mb-5" />
       </div>
     </div>
   );

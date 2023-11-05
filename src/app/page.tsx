@@ -1,7 +1,8 @@
 import Navbar from "@/components/global/Navbar";
 import Header from "./home/Header";
 import Card from "./home/Card";
-import Test from "./home/Test";
+import BillHistory from "./home/BillHistory";
+import TabPage from "./demo/page";
 
 export default function Home() {
   return (
@@ -12,8 +13,8 @@ export default function Home() {
       <div className="flex-grow lg:ml-[290px]">
         <Header />
         <Card />
+        <BillHistory />
       </div>
-      {/* <Test /> */}
     </div>
   );
 }

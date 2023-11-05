@@ -1,6 +1,6 @@
 import React, {ReactNode} from "react";
 
-interface randomCard {
+export interface randomCard {
   pic: string;
   name: string;
   date: string;
