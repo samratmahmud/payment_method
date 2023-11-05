@@ -60,7 +60,7 @@ function Header() {
             {buttons.map(({name, url}, index) => (
               <div
                 key={index}
-                className="first:rounded-s-lg last:rounded-e-lg border border-gray-500 py-2.5 px-4 flex-shrink-0"
+                className="first:rounded-l-lg last:rounded-r-lg border-y border-l last:border-r border-gray-500 py-2.5 px-4 flex-shrink-0"
               >
                 <Link href={url} className="text-sm font-medium text-gray-700">
                   {name}
